@@ -1,0 +1,34 @@
+Ideas for avuserow to implement:
+
+Non-modules:
+- an IRC bot using Net::IRC::Bot
+
+Perl 5 "direct" ports:
+- Set::CartestianProduct::Lazy
+- Math::SigFigs?
+- Log:Log4perl?
+
+Modules to create:
+- Logging, a la Log::Log4perl, Log::Tiny or something in between
+- Caching, a la Cache::Cache or something simpler
+- Cookie library
+--- would hold cookies from LWP::Simple or similar
+--- would be able to load cookies from various on-disk formats
+- Sereal serializer/deserializer
+--- requires bindings to Snappy: http://code.google.com/p/snappy/
+--- requires a varint parser, maybe worth extracting
+- Storable serializer/deserializer
+- Bindings to libssh2
+--- scary, requires making bindings to sockets or similar
+- Bindings to libpurple
+--- probably very scary
+
+Modules to improve that I made:
+- Audio::Taglib::Simple
+--- investigate potential memory leaks
+
+Modules to improve that others made:
+- Protocol Buffers (https://github.com/samuraisam/p6-pb)
+- SSL - add ciphers (AES, etc)
+- Digest? Sum? Another of the pure-Perl hashing modules?
+- Template6? Template::Mojo?
